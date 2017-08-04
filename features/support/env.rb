@@ -110,7 +110,7 @@ app_host, server_host, server_port, project, retry_times = case ENV['ENVIRONMENT
                                               when 'develop-stage'
                                                 ['http://backoffice-dev.mokapos.com', 'backoffice-dev.mokapos.com', '80', nil, 1]
                                               else
-                                                ['https://www.mokapos.com', 'www.mokapos.com', '80', nil, 1]
+                                                ['http://localhost:3000', 'localhost:3000', '3000', nil, 1]
                                               end
 
 Capybara.app_host = app_host

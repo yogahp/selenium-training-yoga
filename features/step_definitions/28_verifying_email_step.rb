@@ -1,11 +1,11 @@
 Given(/^I've unverified email$/) do
-  @unverified_email = get_unverified_email
+  $email = get_unverified_email
 end
 
 When(/^I try to verifying the email$/) do
   @result_verify_email = verify_email(
     {
-      email: @unverified_email
+      email: $email
     }
   )
 end

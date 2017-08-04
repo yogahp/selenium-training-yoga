@@ -3,6 +3,11 @@ module EmailHelper
     "unverified#{get_domain_tempmail}"
   end
 
+  def get_unverified_random_email
+    email_name = Faker::Name.name.split(" ").join("_")
+    "#{email_name}#{get_domain_tempmail}"
+  end
+
   def verify_email(options)
     email = options[:email]
 

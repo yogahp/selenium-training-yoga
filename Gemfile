@@ -66,3 +66,4 @@ end
 gem "show_me_the_cookies"
 gem "tempmailru"
 gem "curb"
+gem "faker"
